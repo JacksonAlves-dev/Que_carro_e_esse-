@@ -1,0 +1,6 @@
+{
+  "name": "Que Carro é Esse?",
+  "description": "Quiz automotivo estilo Duolingo para adivinhar marcas, logos e detalhes de carros com trilha de fases, metas diárias, bônus e liga ranked.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

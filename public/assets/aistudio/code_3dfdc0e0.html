@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#2d3449","primary-container":"#10b981","primary":"#4edea3","on-surface":"#dae2fd","on-primary-fixed-variant":"#005236","surface-container-high":"#222a3d","on-primary-fixed":"#002113","secondary-container":"#ee9800","outline":"#86948a","tertiary-fixed":"#acedff","secondary":"#ffb95f","surface":"#0b1326","on-tertiary-fixed":"#001f26","primary-fixed":"#6ffbbe","on-secondary-container":"#5b3800","surface-variant":"#2d3449","on-secondary-fixed-variant":"#653e00","on-tertiary":"#003640","error":"#ffb4ab","inverse-on-surface":"#283044","error-container":"#93000a","on-primary":"#003824","on-error-container":"#ffdad6","tertiary-container":"#00b2d0","surface-container":"#171f33","inverse-primary":"#006c49","surface-bright":"#31394d","on-tertiary-fixed-variant":"#004e5c","on-primary-container":"#00422b","background":"#0b1326","primary-fixed-dim":"#4edea3","on-background":"#dae2fd","inverse-surface":"#dae2fd","on-error":"#690005","surface-dim":"#0b1326","outline-variant":"#3c4a42","on-surface-variant":"#bbcabf","tertiary-fixed-dim":"#4cd7f6","surface-tint":"#4edea3","on-tertiary-container":"#003f4b","on-secondary-fixed":"#2a1700","secondary-fixed":"#ffddb8","surface-container-low":"#131b2e","surface-container-lowest":"#060e20","on-secondary":"#472a00","secondary-fixed-dim":"#ffb95f","tertiary":"#4cd7f6"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin":"1rem","space-xs":"0.25rem","space-xl":"2.5rem","gutter":"1.25rem","space-sm":"0.5rem","space-md":"1rem","margin-desktop":"2.5rem","space-lg":"1.5rem","gutter-desktop":"2rem"},fontFamily:{"headline-sm":["Outfit"],"headline-md":["Outfit"],"label-md":["Outfit"],"headline-lg-mobile":["Outfit"],"label-sm":["Outfit"],"display-hero":["Outfit"],"body-md":["Plus Jakarta Sans"],"telemetry-num":["Outfit"],"body-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Outfit"],"display-hero-mobile":["Outfit"],"label-lg":["Outfit"]},fontSize:{"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"18px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"800"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"telemetry-num":["22px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"800"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-lg":["16px",{"lineHeight":"20px","letterSpacing":"0.04em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)] border-b-2 border-surface-container-high"><div class="h-20 w-full px-space-md lg:px-space-xl flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="Logo Que Carro é esse?" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDBtPV2UwOz7ZwsnU52v1dfVds9efJvGwJOm-imKgGggycYzjLavXYFXKu9JwX46XwmR1jxEtFtVg0QrX7a5zhsYACAaivf3XlWT62Jr4nxxDRb22b-6mm95BcRg3Yc5_3Ed3b-HRRM6xoOIG7UcTlfcki2avgyMD7yVQ-qVpesroBt1bzDNXZLbPR7rIAXQG4U5w2UsyqF5NH_0H0fMEv2LT0FkMx8RIgZwwQQD78"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface hidden sm:inline-block">Que Carro é esse?</span></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-low p-1.5 rounded-xl" data-active-classes="bg-surface-container-high text-primary font-bold rounded-lg"><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider rounded-lg transition-colors" data-path="trilha-pista" href="#">Trilha</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider rounded-lg transition-colors" data-path="partida-quiz" href="#">Quiz</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider rounded-lg transition-colors" data-path="desafios-diarios" href="#">Desafios Diários</a><a aria-current="page" class="px-space-md py-space-xs uppercase tracking-wider transition-colors bg-surface-container-high text-primary font-bold rounded-lg" data-path="garagem-e-conquistas" href="#">Garagem &amp; Troféus</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider rounded-lg transition-colors" data-path="classificacao" href="#">Classificação</a></nav><div class="flex items-center gap-space-xs md:gap-space-sm shrink-0"><div class="flex items-center gap-1.5 bg-surface-container-low px-2.5 py-1.5 rounded-lg"><span class="material-symbols-outlined text-primary text-lg">local_gas_station</span><span class="font-telemetry-num text-telemetry-num text-primary leading-none">5/5</span></div><div class="flex items-center gap-1.5 bg-surface-container-low px-2.5 py-1.5 rounded-lg"><span class="material-symbols-outlined text-secondary text-lg">local_fire_department</span><span class="font-telemetry-num text-telemetry-num text-secondary leading-none">7</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden md:inline">Dias</span></div><div class="hidden sm:flex items-center gap-1.5 bg-surface-container-low px-2.5 py-1.5 rounded-lg"><span class="material-symbols-outlined text-tertiary text-lg">bolt</span><span class="font-telemetry-num text-telemetry-num text-tertiary leading-none">1.450</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden md:inline">XP</span></div><div class="flex items-center gap-1.5 bg-surface-container-low px-2.5 py-1.5 rounded-lg"><span class="material-symbols-outlined text-secondary text-lg">toll</span><span class="font-telemetry-num text-telemetry-num text-secondary leading-none">320</span></div><div class="flex items-center gap-space-xs pl-space-xs border-l border-surface-container-high"><div class="text-right hidden lg:block leading-tight"><div class="font-label-md text-label-md text-on-surface">Piloto Pro</div><div class="font-label-sm text-label-sm text-primary">Nvl 14</div></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAzo6Y21gXdH9W0g9qVz4KhU7fJkpwR91a0kDrV8PFRCIvlWzIMZKO4gS-rQR_4RveouUAGXG5cQe0aEXNUMixRmOgVUYpDiSk1nO7ftANDOnNo1mufO05eGGixlDZPsEMjaMp-6lXJzxbkmNBraiqptiB3TfD_1zqfgLRHH2V9WYIO8sDOzJXLdAi4TQA2NCAtKM9nY9p7J-CX8RNlePo7egSroYq86U7_roa0w"/></div></div></div></header><aside class="fixed left-0 top-20 bottom-0 w-64 bg-surface-container-low z-40 hidden lg:flex flex-col justify-between p-space-md border-r-2 border-surface-container-high"><div class="flex flex-col gap-space-md"><div class="px-space-sm pt-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Menu Principal</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="trilha-pista" href="#"><span class="material-symbols-outlined text-xl">alt_route</span>Trilha</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="partida-quiz" href="#"><span class="material-symbols-outlined text-xl">sports_score</span>Quiz Carro</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="desafios-diarios" href="#"><span class="material-symbols-outlined text-xl">flag</span>Desafios Diários</a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg" data-path="garagem-e-conquistas" href="#"><span class="material-symbols-outlined text-xl">garage</span>Garagem &amp; Troféus</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="classificacao" href="#"><span class="material-symbols-outlined text-xl">leaderboard</span>Classificação</a></nav></div><div class="bg-surface-container-high p-space-md rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm uppercase text-outline">Tanque Turbo</span><span class="font-label-sm text-label-sm text-primary">Pronto</span></div><div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden"><div class="bg-primary h-full w-full"></div></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Recarga completa para disputar o topo do pódio!</p></div></aside><div class="lg:pl-64 w-full"><main class="relative pt-20 w-full min-h-screen bg-surface px-space-md md:px-space-lg lg:px-space-xl py-space-md"><div class="flex flex-col w-full gap-space-lg pb-space-xl">
+<!-- Top Profile Hero Section -->
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container-low shadow-xl">
+<!-- Ambient Scrim / Night Circuit Banner -->
+<div class="relative w-full h-56 md:h-64 bg-cover bg-center" data-alt="Cinematic night time asphalt racetrack circuit at dusk with glowing neon cyan and amber light trails, hypercar aerodynamic curves blurred in motion, dark aesthetic with electric green atmospheric telemetry glows and mist reflections on damp tarmac." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAMZvTGvXw6EiE3CyoNMHL19skH8j7dgCIN6zcRKchIQ_lOgdXTK6rzDpqP720ZId0fAs2SeWYMUibf8B6Rqzl0qhBHeC8QFpV4mzDgbNpT9RlkC3GyBRRaPLppUXwj8SJANAi7KzRTpPmLGYVTKMBaSSM9xnPs2N9w5P5u9zbtzjUEHxBo448NjEjP78xi_EuqjJPIUaDrxm6eXRbozntPl7yoBaV3rKuxXmnKNA')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/70 to-transparent"></div>
+<div class="absolute top-4 right-4 flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-3 py-1.5 rounded-full text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Temporada 03 • Paddock Elite</span>
+</div>
+</div>
+<!-- Pilot Profile Content Card Overlay -->
+<div class="relative px-space-md md:px-space-xl pb-space-lg -mt-20 md:-mt-24">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<!-- Avatar and Main Tag -->
+<div class="flex flex-col sm:flex-row items-center sm:items-end gap-space-md text-center sm:text-left">
+<div class="relative shrink-0">
+<div class="w-28 h-28 md:w-32 md:h-32 rounded-2xl p-1 bg-gradient-to-tr from-secondary via-primary to-tertiary shadow-lg">
+<img class="w-full h-full rounded-xl object-cover" data-alt="Close-up portrait of a high-tech racing driver wearing a sleek carbon-fiber matte helmet with reflective gold-tinted visor mirroring circuit lights, ambient dark cyan and warm ambient racing aesthetic, sharp focus and ultra realistic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk1_LPlCRPGHU2enIg8WCOimS8b9RERiWS1PLINULA6Lt2POzRsU9f9DXlv2i9nQaJWQynh1w1VEixC2YI6fdmi_wtW3zYPcSjhdIxMM4s_A59BxRlkJyBPOEYCKFsS-UG77TxU-8bHyGkJ2zBHNHzuyI_RQteDpn848eQn7cG_MDH0lQzVA5iYwul6o16h479cTWpiU8_1Wp96f-8IrIXo_bFWfjMMzj6kg91dA"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-secondary text-on-secondary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-md flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">bolt</span> NVL 14
+            </div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-center sm:justify-start gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-extrabold">Piloto Mestre</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Alexandre "Apex" Silva</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center justify-center sm:justify-start gap-1">
+<span class="material-symbols-outlined text-sm text-outline">sports_motorsports</span> Garagem Oficial #4092 • São Paulo, BR
+            </p>
+</div>
+</div>
+<!-- Telemetry Stats Cards -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs md:gap-space-sm bg-surface-container-highest/60 backdrop-blur-md p-space-sm rounded-xl">
+<div class="flex flex-col p-2.5 bg-surface-container rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Descobertos</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-telemetry-num text-telemetry-num text-primary">742</span>
+<span class="font-label-sm text-label-sm text-outline">veíc.</span>
+</div>
+</div>
+<div class="flex flex-col p-2.5 bg-surface-container rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Taxa Acerto</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-telemetry-num text-telemetry-num text-tertiary">89.4%</span>
+</div>
+</div>
+<div class="flex flex-col p-2.5 bg-surface-container rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Recorde Ofensiva</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-telemetry-num text-telemetry-num text-secondary">24</span>
+<span class="font-label-sm text-label-sm text-outline">dias</span>
+</div>
+</div>
+<div class="flex flex-col p-2.5 bg-surface-container rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Troféus Ouro</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-telemetry-num text-telemetry-num text-secondary-fixed">12</span>
+<span class="material-symbols-outlined text-xs text-secondary" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Segmented Navigation Tabs -->
+<div class="mt-space-lg flex items-center gap-space-xs overflow-x-auto pb-1" id="tab-container">
+<button class="tab-button flex items-center gap-2 px-space-md py-2.5 rounded-xl font-label-md text-label-md uppercase tracking-wider transition-all duration-200 bg-primary text-on-primary shadow-[0_4px_0_0_#059669]" id="tab-btn-garagem" onclick="switchTab('garagem')">
+<span class="material-symbols-outlined text-lg">garage</span>
+          Minha Garagem (28/40)
+        </button>
+<button class="tab-button flex items-center gap-2 px-space-md py-2.5 rounded-xl font-label-md text-label-md uppercase tracking-wider transition-all duration-200 bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest" id="tab-btn-conquistas" onclick="switchTab('conquistas')">
+<span class="material-symbols-outlined text-lg">emoji_events</span>
+          Conquistas &amp; Troféus
+        </button>
+<button class="tab-button flex items-center gap-2 px-space-md py-2.5 rounded-xl font-label-md text-label-md uppercase tracking-wider transition-all duration-200 bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest" id="tab-btn-loja" onclick="switchTab('loja')">
+<span class="material-symbols-outlined text-lg">tune</span>
+          Loja de Oficina &amp; Bônus
+        </button>
+</div>
+</div>
+</div>
+<!-- TAB SECTION 1: GARAGEM COLECIONÁVEL -->
+<section class="tab-content flex flex-col gap-space-md" id="view-garagem">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+          Coleção de Veículos
+          <span class="text-xs bg-surface-container-high text-primary px-2.5 py-1 rounded-full font-label-sm">4 Lendários</span>
+</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Identifique modelos nos desafios para sintetizar novas cartas para seu acervo.</p>
+</div>
+<!-- Filter Chips -->
+<div class="flex items-center gap-1.5 overflow-x-auto py-1">
+<button class="px-3 py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-lg">Todos</button>
+<button class="px-3 py-1 bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm rounded-lg">Supercarros</button>
+<button class="px-3 py-1 bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm rounded-lg">JDM Clássicos</button>
+<button class="px-3 py-1 bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm rounded-lg">Rally &amp; Pista</button>
+</div>
+</div>
+<!-- Cards Holographic Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md">
+<!-- Card 1: Lendário - Porsche 911 GT3 RS -->
+<div class="group relative rounded-2xl p-space-md bg-gradient-to-b from-surface-container-high to-surface-container-low transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_0_0_#ca8a04] hover:shadow-[0_8px_20px_rgba(255,185,95,0.25)]">
+<div class="absolute -top-3 left-4 bg-gradient-to-r from-secondary-container to-secondary text-on-secondary-container font-label-sm text-label-sm px-3 py-0.5 rounded-full flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">stars</span>
+          LENDÁRIO
+        </div>
+<div class="flex items-center justify-between text-outline text-xs mt-1 mb-2 font-label-sm">
+<span>#092 • PORSCHE</span>
+<span class="text-secondary font-bold">100% PERFEIÇÃO</span>
+</div>
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High quality studio shot of a 2023 Porsche 911 GT3 RS 992 in arctic grey with pyros red lightweight magnesium wheels and massive carbon wing, pristine studio lighting with amber reflections, cinematic automotive grading." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCafM_XOZResWzCNyRboCNBXUZIGUeHGjJ5nbsg07qOc4onNs9Xzvx7LdzvDUcVRxvDL_73injPrO7Ei_7MFiX3Qrd9OMx5XScIdxnSfhykf_gJSlWFkhsgMh8THWqvOaUsE_7HYf1n4qUW8GbxH0ujr5PSHZCqeHRnOmD2HlH1D736dg6o7l3kCQXZEkQ376xnH1LHtT-XgMqOVXsEh6VTeOE1kDWUUK3v8xYwLw"/>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/80 backdrop-blur-sm px-2 py-0.5 rounded text-on-surface text-xs font-label-sm">
+            4.0L Aspirado Boxer 6
+          </div>
+<div class="absolute top-2 right-2 bg-secondary/90 text-on-secondary rounded-full p-1 leading-none shadow">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="mt-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Porsche 911 GT3 RS (992)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">525 cv • 0-100 em 3.2s • Downforce Extremo DRS</p>
+</div>
+<div class="mt-4 pt-3 border-t-0 bg-surface-container-lowest/50 p-2.5 rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Desbloqueado</span>
+<span class="font-label-md text-label-md text-on-surface">14/10/2024</span>
+</div>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Épico - McLaren F1 GTR -->
+<div class="group relative rounded-2xl p-space-md bg-gradient-to-b from-surface-container-high to-surface-container-low transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_0_0_#7c3aed] hover:shadow-[0_8px_20px_rgba(172,237,255,0.2)]">
+<div class="absolute -top-3 left-4 bg-tertiary-container text-on-tertiary font-label-sm text-label-sm px-3 py-0.5 rounded-full flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+          ÉPICO
+        </div>
+<div class="flex items-center justify-between text-outline text-xs mt-1 mb-2 font-label-sm">
+<span>#011 • McLAREN</span>
+<span class="text-tertiary font-bold">3 ESTRELAS</span>
+</div>
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Iconic Gulf McLaren F1 GTR racing sports car captured on Le Mans straight line, iconic orange and pale blue racing livery, dusk light with sparks flying from titanium underbody, high speed motion blur on background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO242rf9x-S7Gbv7A8m48koo3Wr93C_F0S2wMND--X9pvH1UnW7OOpSdYQAxWRMPBvt7jfrHLHusl3iiq5EzGZobGSf83xSmi3EBcjl7e7BtfBpq06yytFx0UEcOgzPzDUexYCI-UzF8vPRBC-p1BNLwZ1LkRT9Z3nOla-CsT9MrkWnqati_1-c5C_zvxjZY9pS8Ci2ydSYMN5rnVldIHv1XRs7bBkQs6NamFE7Q"/>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/80 backdrop-blur-sm px-2 py-0.5 rounded text-on-surface text-xs font-label-sm">
+            6.1L BMW V12
+          </div>
+</div>
+<div class="mt-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">McLaren F1 GTR (1995)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">600 cv • Cockpit Central • Vencedor de Le Mans</p>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-lowest/50 p-2.5 rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Desbloqueado</span>
+<span class="font-label-md text-label-md text-on-surface">02/11/2024</span>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+<span class="material-symbols-outlined text-sm text-surface-bright">grade</span>
+<span class="material-symbols-outlined text-sm text-surface-bright">grade</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Raro - Toyota Supra MK4 (2JZ) -->
+<div class="group relative rounded-2xl p-space-md bg-gradient-to-b from-surface-container-high to-surface-container-low transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_0_0_#0284c7] hover:shadow-[0_8px_20px_rgba(76,215,246,0.2)]">
+<div class="absolute -top-3 left-4 bg-tertiary text-on-tertiary font-label-sm text-label-sm px-3 py-0.5 rounded-full flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">flag</span>
+          RARO • JDM HERO
+        </div>
+<div class="flex items-center justify-between text-outline text-xs mt-1 mb-2 font-label-sm">
+<span>#044 • TOYOTA</span>
+<span class="text-primary font-bold">DESAFIO JDM</span>
+</div>
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Toyota Supra MK4 twin turbo in deep midnight purple paint parked in a wet Tokyo neon-lit alleyway, glistening rain droplets, glowing red round tail lights, classic massive curved spoiler, dark and moody underground atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5cdpBDf7pbqWvClc-_sZcI7_01hzEBZiR1IzmrHOvpDEmU_X-oo3ssF9Z8i5rFSsKJFAY1dcuk2KXcwumJrp9sqnooZ5yCYU3XXXUB_6MZGcgLFXsfnxPf17P-xV51qtTCwZ1G8AazB3W3JMAngdJ72SdcuXaYgwY6Y-Kc6tx8IIJUXnyTu_szP9JtRIGqLisEOxXjazX3yGTnNCJl2DatLU5JWoi65t7dnAvmg"/>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/80 backdrop-blur-sm px-2 py-0.5 rounded text-on-surface text-xs font-label-sm">
+            3.0L Twin-Turbo 2JZ-GTE
+          </div>
+</div>
+<div class="mt-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Toyota Supra MK4 (A80)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">320 cv Stock • Transmissão Getrag 6M • Lenda das Ruas</p>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-lowest/50 p-2.5 rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Desbloqueado</span>
+<span class="font-label-md text-label-md text-on-surface">20/11/2024</span>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+<span class="material-symbols-outlined text-sm text-surface-bright">grade</span>
+<span class="material-symbols-outlined text-sm text-surface-bright">grade</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Raro - Ferrari F40 Competizione -->
+<div class="group relative rounded-2xl p-space-md bg-gradient-to-b from-surface-container-high to-surface-container-low transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_0_0_#93000a] hover:shadow-[0_8px_20px_rgba(255,180,171,0.2)]">
+<div class="absolute -top-3 left-4 bg-error text-on-error font-label-sm text-label-sm px-3 py-0.5 rounded-full flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+          RARO • PISTA
+        </div>
+<div class="flex items-center justify-between text-outline text-xs mt-1 mb-2 font-label-sm">
+<span>#077 • FERRARI</span>
+<span class="text-error font-bold">ROSSO CORSA</span>
+</div>
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Ferrari F40 Competizione in Rosso Corsa parked in a pit garage with dramatic overhead lights reflecting on Kevlar weave panels and louvers, carbon rear wing, raw analog supercar attitude." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw-0-3YeYF3_of-DQq6yQTflTGDCf8r5sOUFwW-TlIFdxktc5jpZkboLU9BjZAL9kYX2AAR50st-k3j8YCkjmqh3wSOf76hGBTN_Y6oMGeMIm0S9XeMgCMMWwXttzqQM69zp4zK1mXo7BB-cjD9kSwHcW6I1vKIAqfETeaBcYuHPj9N_eNb0nsz-8m59q40AaMiWsmpRXSb1_G7cyFn7TrACCGtqxqNyxcwCuc6w"/>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/80 backdrop-blur-sm px-2 py-0.5 rounded text-on-surface text-xs font-label-sm">
+            2.9L Twin-Turbo V8
+          </div>
+</div>
+<div class="mt-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ferrari F40 Competizione</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">700 cv • 1.050 kg • Pura fúria analógica de Maranello</p>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-lowest/50 p-2.5 rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Desbloqueado</span>
+<span class="font-label-md text-label-md text-on-surface">28/11/2024</span>
+</div>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">grade</span>
+<span class="material-symbols-outlined text-sm text-surface-bright">grade</span>
+</div>
+</div>
+</div>
+<!-- Card 5: Silhueta Bloqueada - Bugatti Chiron Pur Sport (4/5 partes) -->
+<div class="relative rounded-2xl p-space-md bg-surface-container-low opacity-95 shadow-[0_4px_0_0_#1e293b]">
+<div class="absolute -top-3 left-4 bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-3 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">lock</span>
+          EM SÍNTESE
+        </div>
+<div class="flex items-center justify-between text-outline text-xs mt-1 mb-2 font-label-sm">
+<span>#003 • BUGATTI</span>
+<span class="text-tertiary font-bold">4 DE 5 PARTES</span>
+</div>
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest flex items-center justify-center">
+<!-- Obscured silhouette styling -->
+<div class="absolute inset-0 bg-cover bg-center filter brightness-0 contrast-200 opacity-20" data-alt="Dark mysterious blacked-out silhouette of a modern hypercar Bugatti Chiron Pur Sport with illuminated horseshoe grille outline and massive rear fixed wing, high contrast low key lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRjz-LhriRIXN1CMBcCnrBikKmtw2-51ql2KIspob_5fY0g4w7LgQ-iuaJOSaHcU7jXQyi2Fdkn0Rc2phmanJEMGrMOcKDWNEDJA49a6b1lhzaW9Npo1lrRS9ZgRmrAYu6dwCtjrR4b-ugAZvQrgsAXpZvXKM4UW9zkQRPfyOgl6S6NH_J9BZ5AuSsHyVAwh31g0iHZzoSF2i5OoHKYacHXyAVeFG70zNtCmGONg')"></div>
+<div class="relative z-10 flex flex-col items-center gap-2 text-center p-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-2xl">extension</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Falta 1 fragmento de quiz francês!</span>
+</div>
+</div>
+<div class="mt-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface-variant">Bugatti Chiron Pur Sport</h3>
+<div class="w-full bg-surface-container-lowest h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-tertiary h-full w-4/5"></div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Próxima pista: Desafio W16</span>
+<button class="px-3 py-1.5 bg-surface-container-highest hover:bg-surface-container-high text-tertiary font-label-sm text-label-sm rounded-lg transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">play_arrow</span> Buscar Peça
+          </button>
+</div>
+</div>
+<!-- Card 6: Silhueta Bloqueada - Lamborghini Countach -->
+<div class="relative rounded-2xl p-space-md bg-surface-container-lowest/80 opacity-75 shadow-[0_4px_0_0_#131b2e]">
+<div class="absolute -top-3 left-4 bg-surface-container-high text-outline font-label-sm text-label-sm px-3 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">lock</span>
+          BLOQUEADO
+        </div>
+<div class="flex items-center justify-between text-outline text-xs mt-1 mb-2 font-label-sm">
+<span>#029 • LAMBORGHINI</span>
+<span class="text-outline">NVL 16 REQUERIDO</span>
+</div>
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest flex items-center justify-center">
+<div class="absolute inset-0 bg-cover bg-center filter grayscale brightness-0 opacity-15" data-alt="Classic wedge shaped Lamborghini Countach LP5000 Quattrovalvole silhouette in dramatic shadow, pop-up lights closed, aggressive Italian 80s supercar shape against dark background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBQuOeGw-S2O1X5vt5LwdzV7FmZ1wiKeb78KMSYRHOkl8YzvfU3o2V7Kr4B4uFCzMcmdTBshnw47LgKb_VisVoPHemof_FaGx_r3jvpdSfOGYjNbm8rOOvQeLoF6D3lEY-9aRj_G64gpE1l-GhH5vOkWruz1NPxjY4SL0USooLHr_TEEu8sBEqdBG2DKbfBh96uNdR3a5pN9WOnvei9-o-DdHn3pe36fa_H2Burag')"></div>
+<div class="relative z-10 flex flex-col items-center gap-1 text-center">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-xl">lock</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline mt-1">Disponível no Nível 16</span>
+</div>
+</div>
+<div class="mt-3">
+<h3 class="font-headline-sm text-headline-sm text-outline">Lamborghini Countach LP5000</h3>
+<p class="font-body-sm text-body-sm text-outline">Desbloqueia na pista "Ícones dos Anos 80"</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">+1.200 XP para liberar</span>
+<span class="material-symbols-outlined text-outline text-lg">flag</span>
+</div>
+</div>
+</div>
+</section>
+<!-- TAB SECTION 2: CONQUISTAS & TROFÉUS -->
+<section class="tab-content hidden flex-col gap-space-md" id="view-conquistas">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+          Troféus da Carreira
+          <span class="text-xs bg-secondary-container text-on-secondary-container px-2.5 py-1 rounded-full font-label-sm">18 / 32 Concluídos</span>
+</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Prove sua perícia identificando detalhes milimétricos dos carros.</p>
+</div>
+<div class="flex items-center gap-2 text-secondary font-label-md text-label-md bg-surface-container-low px-3 py-1.5 rounded-xl">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">toll</span>
+        +3.450 Moedas Acumuladas
+      </div>
+</div>
+<!-- Achievement List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Achievement 1: Olho de Águia (Concluído) -->
+<div class="relative bg-surface-container-low p-space-md rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-[0_4px_0_0_#10b981]">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 shadow-lg">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">visibility</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Olho de Águia</h3>
+<span class="bg-primary/20 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-md flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span> CONCLUÍDO
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Identifique 50 carros diferentes apenas pela assinatura do conjunto óptico / farol dianteiro.</p>
+<div class="flex items-center gap-space-md mt-2 text-outline font-label-sm text-label-sm">
+<span>Progresso: <b class="text-primary">50 / 50</b></span>
+<span>Recompensa: +300 Moedas, 500 XP</span>
+</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between gap-2 shrink-0">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="font-label-md text-label-md text-secondary">Troféu Ouro</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Ganho em 12/11/2024</span>
+</div>
+</div>
+<!-- Achievement 2: Mecânico Chefe (18/20) -->
+<div class="relative bg-surface-container-low p-space-md rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-[0_4px_0_0_#ee9800]">
+<div class="flex items-start sm:items-center gap-space-md flex-1">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-3xl">build_circle</span>
+</div>
+<div class="w-full max-w-xl">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mecânico Chefe</h3>
+<span class="bg-secondary/20 text-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-md font-bold">
+                18 / 20 ACERTOS
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Acerte a montadora de 20 veículos clássicos através de seus logotipos históricos vintage.</p>
+<div class="w-full bg-surface-container-lowest h-2.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 90%;"></div>
+</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between gap-2 shrink-0">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-base">toll</span>
+<span class="font-label-md text-label-md text-on-surface">+250 Moedas</span>
+</div>
+<button class="px-space-md py-1.5 bg-secondary text-on-secondary font-label-sm text-label-sm uppercase rounded-lg shadow-[0_3px_0_0_#b45309] active:translate-y-0.5">
+            Jogar Quiz Logos
+          </button>
+</div>
+</div>
+<!-- Achievement 3: Turbo Constante (7/14) -->
+<div class="relative bg-surface-container-low p-space-md rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-[0_4px_0_0_#4cd7f6]">
+<div class="flex items-start sm:items-center gap-space-md flex-1">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-3xl">local_fire_department</span>
+</div>
+<div class="w-full max-w-xl">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Turbo Constante</h3>
+<span class="bg-tertiary/20 text-tertiary font-label-sm text-label-sm px-2 py-0.5 rounded-md font-bold">
+                7 / 14 DIAS
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Mantenha a ofensiva de treinos automotivos ativa por 14 dias sem interrupções.</p>
+<div class="w-full bg-surface-container-lowest h-2.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full transition-all duration-500" style="width: 50%;"></div>
+</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between gap-2 shrink-0">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-base">bolt</span>
+<span class="font-label-md text-label-md text-on-surface">+1.000 XP</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Faltam 7 dias</span>
+</div>
+</div>
+</div>
+</section>
+<!-- TAB SECTION 3: LOJA DE OFICINA & POWER-UPS -->
+<section class="tab-content hidden flex-col gap-space-md" id="view-loja">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+          Oficina de Bônus &amp; Nitro
+          <span class="text-xs bg-surface-container-high text-primary px-2.5 py-1 rounded-full font-label-sm">Recursos Imediatos</span>
+</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Gaste suas moedas conquistadas nas pistas para garantir vantagens táticas nos quizzes difíceis.</p>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-xl">
+<span class="font-label-sm text-label-sm text-outline uppercase">Saldo Disponível:</span>
+<span class="flex items-center gap-1 font-telemetry-num text-telemetry-num text-secondary">
+<span class="material-symbols-outlined text-lg">toll</span> 320 Moedas
+        </span>
+</div>
+</div>
+<!-- Power-Up Items Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Power-Up 1: Combustível Extra -->
+<div class="bg-surface-container-low p-space-md rounded-2xl flex flex-col justify-between shadow-[0_4px_0_0_#10b981] relative">
+<div class="flex flex-col gap-3">
+<div class="w-14 h-14 rounded-2xl bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">local_gas_station</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tanque Extra (+5 Vidas)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Recarrega instantaneamente todos os seus tanques de combustível para você continuar na pista sem esperar recarga.</p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-lowest/40 -mx-space-md -mb-space-md p-space-md rounded-b-2xl flex items-center justify-between">
+<div class="flex items-center gap-1 text-secondary font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-lg">toll</span> 100
+          </div>
+<button class="px-space-md py-2 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider rounded-xl shadow-[0_3px_0_0_#059669] hover:brightness-105 active:translate-y-1 transition-all">
+            Comprar
+          </button>
+</div>
+</div>
+<!-- Power-Up 2: Eliminador 50/50 -->
+<div class="bg-surface-container-low p-space-md rounded-2xl flex flex-col justify-between shadow-[0_4px_0_0_#0284c7] relative">
+<div class="flex flex-col gap-3">
+<div class="w-14 h-14 rounded-2xl bg-tertiary/20 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">filter_2</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Eliminador 50/50</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Descarta imediatamente duas alternativas incorretas em perguntas desafiadoras de superesportivos.</p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-lowest/40 -mx-space-md -mb-space-md p-space-md rounded-b-2xl flex items-center justify-between">
+<div class="flex items-center gap-1 text-secondary font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-lg">toll</span> 50
+          </div>
+<button class="px-space-md py-2 bg-tertiary text-on-tertiary font-label-md text-label-md uppercase tracking-wider rounded-xl shadow-[0_3px_0_0_#00b2d0] hover:brightness-105 active:translate-y-1 transition-all">
+            Comprar
+          </button>
+</div>
+</div>
+<!-- Power-Up 3: Congelamento de Ofensiva -->
+<div class="bg-surface-container-low p-space-md rounded-2xl flex flex-col justify-between shadow-[0_4px_0_0_#ee9800] relative">
+<div class="flex flex-col gap-3">
+<div class="w-14 h-14 rounded-2xl bg-secondary/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">ac_unit</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Escudo de Chama</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Protege seu recorde de ofensiva por 24 horas caso você passe um dia sem disputar nenhuma rodada de quiz.</p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-lowest/40 -mx-space-md -mb-space-md p-space-md rounded-b-2xl flex items-center justify-between">
+<div class="flex items-center gap-1 text-secondary font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-lg">toll</span> 200
+          </div>
+<button class="px-space-md py-2 bg-secondary text-on-secondary font-label-md text-label-md uppercase tracking-wider rounded-xl shadow-[0_3px_0_0_#d97706] hover:brightness-105 active:translate-y-1 transition-all">
+            Comprar
+          </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function switchTab(tabName) {
+    const tabs = ['garagem', 'conquistas', 'loja'];
+    tabs.forEach(t => {
+      const view = document.getElementById(`view-${t}`);
+      const btn = document.getElementById(`tab-btn-${t}`);
+      if (t === tabName) {
+        view.classList.remove('hidden');
+        view.classList.add('flex');
+        btn.className = 'tab-button flex items-center gap-2 px-space-md py-2.5 rounded-xl font-label-md text-label-md uppercase tracking-wider transition-all duration-200 bg-primary text-on-primary shadow-[0_4px_0_0_#059669]';
+      } else {
+        view.classList.add('hidden');
+        view.classList.remove('flex');
+        btn.className = 'tab-button flex items-center gap-2 px-space-md py-2.5 rounded-xl font-label-md text-label-md uppercase tracking-wider transition-all duration-200 bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest';
+      }
+    });
+  }
+</script></main></div></body></html>
